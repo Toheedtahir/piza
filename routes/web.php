@@ -25,7 +25,7 @@ Route::delete('/pizzas/{id}', 'App\Http\Controllers\PizzaController@destroy')-> 
 
 
 
-
+Route::post('/pizzas/{id}/restore', [PizzaController::class, 'restore']);
 Auth::routes([
   'register' => false
 ]);
